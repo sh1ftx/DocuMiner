@@ -124,9 +124,39 @@ pip install -r requirements.txt || print_warn "Algumas dependências podem preci
 
 print_step "Deseja instalar Whisper (para transcrição de áudio)?"
 if ask_user "Instalar Whisper?"; then
-  if ! pip install git+https://github.com/openai/whisper.git; then
-    print_error "❌ Falha ao instalar Whisper. Abortando."
-    exit 1
+  # Tenta instalar Whisper com resume retries para evitar erro por conexão intermitente
+  if ! pip install --upgrade --force-reinstall --no-cache-dir --resume-retries 5 git+https://github.com/openai/whisper.git; then
+    print_warn "Falha na instalação automática do Whisper. Tentando instalar triton manualmente..."
+
+    TRITON_URL="https://files.pythonhosted.org/packages/7d/74/4bf2702b65e93accaa20397b74da46fb7a0356452c1bb94dbabaf0582930/triton-3.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+    TRITON_WHL="triton-3.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+
+    # Faz download com curl ou wget (priorizando curl)
+    if command -v curl &> /dev/null; then
+      curl -C - -L -o "$TRITON_WHL" "$TRITON_URL" || true
+    elif command -v wget &> /dev/null; then
+      wget -c -O "$TRITON_WHL" "$TRITON_URL" || true
+    else
+      print_error "Nem curl nem wget encontrados para baixar triton manualmente."
+      exit 1
+    fi
+
+    if [ -f "$TRITON_WHL" ]; then
+      pip install "$TRITON_WHL" || {
+        print_error "Falha ao instalar o arquivo triton manualmente."
+        exit 1
+      }
+      rm -f "$TRITON_WHL"
+
+      print_step "Tentando novamente instalar Whisper..."
+      if ! pip install --upgrade --force-reinstall --no-cache-dir git+https://github.com/openai/whisper.git; then
+        print_error "❌ Falha ao instalar Whisper após tentativa manual. Abortando."
+        exit 1
+      fi
+    else
+      print_error "Arquivo triton não baixado. Abortando."
+      exit 1
+    fi
   fi
 else
   print_warn "Pulando instalação do Whisper."
