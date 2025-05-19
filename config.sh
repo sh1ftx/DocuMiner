@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# CONFIG.SH - INSTALADOR AUTOMÁTICO E ROBUSTO DO PROJETO: DOCUMINER
+# CONFIG.SH - INSTALADOR AUTOMÁTICO E ROBUSTO DO PROJETO: DOCUMINER (Linux only)
 # ==============================================================================
 
 set -e
@@ -53,6 +53,13 @@ function ask_user() {
   esac
 }
 
+function check_command() {
+  if ! command -v "$1" &> /dev/null; then
+    print_error "Requisito ausente: $1. Instale-o antes de continuar."
+    exit 1
+  fi
+}
+
 show_banner
 
 print_header "Detectando Sistema Operacional..."
@@ -68,15 +75,18 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     print_error "Distribuição Linux não suportada automaticamente."
     exit 1
   fi
-elif [[ "$OSTYPE" == "msys" ]] || [[ "$OSTYPE" == "win32" ]] || [[ "$OSTYPE" == "cygwin" ]]; then
-  OS="windows"
-  PM="choco"
 else
-  print_error "Sistema operacional não reconhecido: $OSTYPE"
+  print_error "Sistema operacional não suportado: $OSTYPE"
   exit 1
 fi
 
 echo "Sistema detectado: $OS"
+
+print_header "Verificando comandos essenciais..."
+
+check_command python3
+check_command pip
+check_command git
 
 print_header "Verificando o Python..."
 
@@ -84,12 +94,10 @@ if ! command -v python3 &> /dev/null; then
   print_warn "Python3 não encontrado."
   if ask_user "Deseja instalar o Python3 agora?"; then
     if [ "$OS" = "debian" ]; then
-      $PM update
+      $PM update -y
       $PM install python3 python3-pip python3-venv -y
     elif [ "$OS" = "arch" ]; then
       $PM python python-pip python-virtualenv --noconfirm
-    elif [ "$OS" = "windows" ]; then
-      $PM install python -y
     fi
   else
     print_error "Instalação do Python cancelada."
@@ -106,11 +114,9 @@ if [ ! -d "venv" ]; then
   echo "Ambiente virtual criado."
 fi
 
-# Ativa o ambiente virtual (suporte Windows e Linux)
+# Ativa o ambiente virtual
 if [ -f "venv/bin/activate" ]; then
   source venv/bin/activate
-elif [ -f "venv/Scripts/activate" ]; then
-  source venv/Scripts/activate
 else
   print_error "Ambiente virtual não encontrado."
   exit 1
@@ -120,46 +126,8 @@ print_step "Atualizando pip..."
 pip install --upgrade pip
 
 print_step "Instalando dependências do projeto..."
-pip install -r requirements.txt || print_warn "Algumas dependências podem precisar ser instaladas manualmente."
-
-print_step "Deseja instalar Whisper (para transcrição de áudio)?"
-if ask_user "Instalar Whisper?"; then
-  # Tenta instalar Whisper com resume retries para evitar erro por conexão intermitente
-  if ! pip install --upgrade --force-reinstall --no-cache-dir --resume-retries 5 git+https://github.com/openai/whisper.git; then
-    print_warn "Falha na instalação automática do Whisper. Tentando instalar triton manualmente..."
-
-    TRITON_URL="https://files.pythonhosted.org/packages/7d/74/4bf2702b65e93accaa20397b74da46fb7a0356452c1bb94dbabaf0582930/triton-3.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
-    TRITON_WHL="triton-3.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
-
-    # Faz download com curl ou wget (priorizando curl)
-    if command -v curl &> /dev/null; then
-      curl -C - -L -o "$TRITON_WHL" "$TRITON_URL" || true
-    elif command -v wget &> /dev/null; then
-      wget -c -O "$TRITON_WHL" "$TRITON_URL" || true
-    else
-      print_error "Nem curl nem wget encontrados para baixar triton manualmente."
-      exit 1
-    fi
-
-    if [ -f "$TRITON_WHL" ]; then
-      pip install "$TRITON_WHL" || {
-        print_error "Falha ao instalar o arquivo triton manualmente."
-        exit 1
-      }
-      rm -f "$TRITON_WHL"
-
-      print_step "Tentando novamente instalar Whisper..."
-      if ! pip install --upgrade --force-reinstall --no-cache-dir git+https://github.com/openai/whisper.git; then
-        print_error "❌ Falha ao instalar Whisper após tentativa manual. Abortando."
-        exit 1
-      fi
-    else
-      print_error "Arquivo triton não baixado. Abortando."
-      exit 1
-    fi
-  fi
-else
-  print_warn "Pulando instalação do Whisper."
+if ! pip install -r requirements.txt; then
+  print_warn "Algumas dependências podem precisar ser instaladas manualmente."
 fi
 
 print_header "Garantindo estrutura mínima de diretórios..."
@@ -170,9 +138,13 @@ mkdir -p user
 
 print_header "Execução do DocuMiner..."
 
-if [ -f "main.py" ]; then
-  python main.py
+if ask_user "Deseja executar o DocuMiner agora?"; then
+  if [ -f "main.py" ]; then
+    python main.py
+  else
+    print_error "Arquivo 'main.py' não encontrado na raiz do projeto. Verifique o projeto."
+    exit 1
+  fi
 else
-  print_error "Arquivo 'main.py' não encontrado na raiz do projeto. Verifique o projeto."
-  exit 1
+  print_warn "Execução do DocuMiner pulada."
 fi

@@ -1,0 +1,142 @@
+ ____                 _       _                   
+|  _ \  ___  ___ ___ | | __ _| |_ ___  _ __ ___   
+| | | |/ _ \/ __/ _ \| |/ _` | __/ _ \| '_ ` _ \  
+| |_| |  __/ (_| (_) | | (_| | || (_) | | | | | | 
+|____/ \___|\___\___/|_|\__,_|\__\___/|_| |_| |_| 
+
+DocuMiner - Análise inteligente de documentos com AI.
+
+👨‍💻 Desenvolvido por: Kayki Ivan (Sh1ft)
+
+[1;34m================================================================================
+        Detectando Sistema Operacional...
+================================================================================[0m
+Sistema detectado: arch
+
+[1;34m================================================================================
+        Verificando comandos essenciais...
+================================================================================[0m
+
+[1;34m================================================================================
+        Verificando o Python...
+================================================================================[0m
+Python já está instalado.
+
+[1;34m================================================================================
+        Criando ambiente virtual 'venv'...
+================================================================================[0m
+[1;32m[PASSO] Atualizando pip...[0m
+Requirement already satisfied: pip in ./venv/lib/python3.13/site-packages (25.1.1)
+[1;32m[PASSO] Instalando dependências do projeto...[0m
+Requirement already satisfied: rich==13.3.4 in ./venv/lib/python3.13/site-packages (from -r requirements.txt (line 2)) (13.3.4)
+Requirement already satisfied: PyMuPDF>=1.25.5 in ./venv/lib/python3.13/site-packages (from -r requirements.txt (line 3)) (1.25.5)
+Requirement already satisfied: pdfplumber==0.11.6 in ./venv/lib/python3.13/site-packages (from -r requirements.txt (line 4)) (0.11.6)
+Requirement already satisfied: tqdm==4.65.0 in ./venv/lib/python3.13/site-packages (from -r requirements.txt (line 5)) (4.65.0)
+Requirement already satisfied: google-generativeai==0.3.0 in ./venv/lib/python3.13/site-packages (from -r requirements.txt (line 6)) (0.3.0)
+Requirement already satisfied: markdown-it-py<3.0.0,>=2.2.0 in ./venv/lib/python3.13/site-packages (from rich==13.3.4->-r requirements.txt (line 2)) (2.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in ./venv/lib/python3.13/site-packages (from rich==13.3.4->-r requirements.txt (line 2)) (2.19.1)
+Requirement already satisfied: pdfminer.six==20250327 in ./venv/lib/python3.13/site-packages (from pdfplumber==0.11.6->-r requirements.txt (line 4)) (20250327)
+Requirement already satisfied: Pillow>=9.1 in ./venv/lib/python3.13/site-packages (from pdfplumber==0.11.6->-r requirements.txt (line 4)) (11.2.1)
+Requirement already satisfied: pypdfium2>=4.18.0 in ./venv/lib/python3.13/site-packages (from pdfplumber==0.11.6->-r requirements.txt (line 4)) (4.30.1)
+Requirement already satisfied: google-ai-generativelanguage==0.4.0 in ./venv/lib/python3.13/site-packages (from google-generativeai==0.3.0->-r requirements.txt (line 6)) (0.4.0)
+Requirement already satisfied: google-auth in ./venv/lib/python3.13/site-packages (from google-generativeai==0.3.0->-r requirements.txt (line 6)) (2.40.1)
+Requirement already satisfied: google-api-core in ./venv/lib/python3.13/site-packages (from google-generativeai==0.3.0->-r requirements.txt (line 6)) (2.25.0rc1)
+Requirement already satisfied: protobuf in ./venv/lib/python3.13/site-packages (from google-generativeai==0.3.0->-r requirements.txt (line 6)) (4.25.7)
+Requirement already satisfied: proto-plus<2.0.0dev,>=1.22.3 in ./venv/lib/python3.13/site-packages (from google-ai-generativelanguage==0.4.0->google-generativeai==0.3.0->-r requirements.txt (line 6)) (1.26.1)
+Requirement already satisfied: charset-normalizer>=2.0.0 in ./venv/lib/python3.13/site-packages (from pdfminer.six==20250327->pdfplumber==0.11.6->-r requirements.txt (line 4)) (3.4.2)
+Requirement already satisfied: cryptography>=36.0.0 in ./venv/lib/python3.13/site-packages (from pdfminer.six==20250327->pdfplumber==0.11.6->-r requirements.txt (line 4)) (45.0.2)
+Requirement already satisfied: googleapis-common-protos<2.0.0,>=1.56.2 in ./venv/lib/python3.13/site-packages (from google-api-core->google-generativeai==0.3.0->-r requirements.txt (line 6)) (1.70.0)
+Requirement already satisfied: requests<3.0.0,>=2.18.0 in ./venv/lib/python3.13/site-packages (from google-api-core->google-generativeai==0.3.0->-r requirements.txt (line 6)) (2.32.3)
+Requirement already satisfied: grpcio<2.0.0,>=1.33.2 in ./venv/lib/python3.13/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.0->google-ai-generativelanguage==0.4.0->google-generativeai==0.3.0->-r requirements.txt (line 6)) (1.71.0)
+Requirement already satisfied: grpcio-status<2.0.0,>=1.33.2 in ./venv/lib/python3.13/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.0->google-ai-generativelanguage==0.4.0->google-generativeai==0.3.0->-r requirements.txt (line 6)) (1.62.3)
+Requirement already satisfied: cachetools<6.0,>=2.0.0 in ./venv/lib/python3.13/site-packages (from google-auth->google-generativeai==0.3.0->-r requirements.txt (line 6)) (5.5.2)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in ./venv/lib/python3.13/site-packages (from google-auth->google-generativeai==0.3.0->-r requirements.txt (line 6)) (0.4.2)
+Requirement already satisfied: rsa<5,>=3.1.4 in ./venv/lib/python3.13/site-packages (from google-auth->google-generativeai==0.3.0->-r requirements.txt (line 6)) (4.9.1)
+Requirement already satisfied: mdurl~=0.1 in ./venv/lib/python3.13/site-packages (from markdown-it-py<3.0.0,>=2.2.0->rich==13.3.4->-r requirements.txt (line 2)) (0.1.2)
+Requirement already satisfied: idna<4,>=2.5 in ./venv/lib/python3.13/site-packages (from requests<3.0.0,>=2.18.0->google-api-core->google-generativeai==0.3.0->-r requirements.txt (line 6)) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./venv/lib/python3.13/site-packages (from requests<3.0.0,>=2.18.0->google-api-core->google-generativeai==0.3.0->-r requirements.txt (line 6)) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.13/site-packages (from requests<3.0.0,>=2.18.0->google-api-core->google-generativeai==0.3.0->-r requirements.txt (line 6)) (2025.4.26)
+Requirement already satisfied: pyasn1>=0.1.3 in ./venv/lib/python3.13/site-packages (from rsa<5,>=3.1.4->google-auth->google-generativeai==0.3.0->-r requirements.txt (line 6)) (0.6.1)
+Requirement already satisfied: cffi>=1.14 in ./venv/lib/python3.13/site-packages (from cryptography>=36.0.0->pdfminer.six==20250327->pdfplumber==0.11.6->-r requirements.txt (line 4)) (1.17.1)
+Requirement already satisfied: pycparser in ./venv/lib/python3.13/site-packages (from cffi>=1.14->cryptography>=36.0.0->pdfminer.six==20250327->pdfplumber==0.11.6->-r requirements.txt (line 4)) (2.22)
+
+[1;34m================================================================================
+        Garantindo estrutura mínima de diretórios...
+================================================================================[0m
+
+[1;34m================================================================================
+        Execução do DocuMiner...
+================================================================================[0m
+Deseja executar o DocuMiner agora? (s/n): ─────────────────────────────────────────────────────────────────────────────────────────────────────────
+/  _ /  _ /   / \ // _/|/ / \  /|/  //                                                                   
+| | || / ||  /  | | ||| |/||| || |\ |||  \  |  /| | |/|| _/||  _ | _/|| |  ||| || | |||  / |    /        
+_/_/_/_/_/  |_/_/  |_\/_\                                                                                
+
+📚 DocuMiner - Seu assistente para mineração e estudo de documentos                                      
+
+👨‍💻 Desenvolvedor: Kayki Ivan (Sh1ft)                                                                   
+🎯 Objetivo: Facilitar o aprendizado e análise de PDFs complexos                                         
+⚙️ Tecnologia: Google Gemini API, Python, Rich, Automação Completa                                        
+
+🚀 Comece explorando seus documentos com inteligência artificial!                                        
+───────────────────────────────────  Bem-vindo ao DocuMiner - Login  ────────────────────────────────────
+╭───────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ 👤 Usuário logado: sh1ft                                                                              │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+        Menu de Login         
+ [1] Login com usuário salvo  
+ [2] Cadastro de novo usuário 
+ [3] Mostrar usuário atual    
+ [4] Alterar API Key          
+ [5] Logout                   
+ [0] Sair                     
+Escolha uma opção (0): ╭───────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ ✅ Login confirmado para sh1ft                                                                        │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Convertendo PDFs para JSON...
+Convertendo PDFs:   0%|          | 0/1 [00:00<?, ?it/s]CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+Convertendo PDFs: 100%|██████████| 1/1 [00:00<00:00,  6.99it/s]Convertendo PDFs: 100%|██████████| 1/1 [00:00<00:00,  6.98it/s]
+Carregando base de conhecimento...
+Pronto! Você pode fazer perguntas baseadas nos documentos.
+
+🤖 Pergunte algo com base nos documentos: ╭────────────────────────────────────── 🤖 Resposta do DocuMiner ───────────────────────────────────────╮
+│                                                                                                       │
+│  Como um modelo de linguagem grande, posso te ajudar respondendo perguntas sobre o DocuMiner com      │
+│  base na documentação fornecida.  Posso te explicar:                                                  │
+│                                                                                                       │
+│  * **A finalidade do DocuMiner:** É uma ferramenta de linha de comando que usa IA para analisar,      │
+│  resumir e responder perguntas sobre documentos PDF.                                                  │
+│  * **Como ele funciona:** Converte PDFs para JSON, permitindo consultas interativas sobre o           │
+│  conteúdo.                                                                                            │
+│  * **Quais tecnologias ele usa:** Python, Google Generative AI, Rich, PDFMiner, OpenAI Whisper        │
+│  (opcional), Tqdm e Python-dotenv.                                                                    │
+│  * **Como instalá-lo e executá-lo:**  Os passos de instalação são detalhados para Linux, Windows,     │
+│  macOS e Android (Termux).                                                                            │
+│  * **Quais funcionalidades ele oferece:** Conversão PDF para JSON, consultas interativas, resumos     │
+│  inteligentes e suporte multiplataforma com interface aprimorada.                                     │
+│  * **A arquitetura do projeto:**  A estrutura de diretórios do código-fonte é descrita.               │
+│                                                                                                       │
+│  Em resumo, posso te fornecer informações detalhadas sobre o DocuMiner baseado na documentação que    │
+│  me foi fornecida.  Faça sua pergunta!                                                                │
+│                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+🤖 Pergunte algo com base nos documentos: ╭────────────────────────────────────── 🤖 Resposta do DocuMiner ───────────────────────────────────────╮
+│                                                                                                       │
+│  O documento não especifica explicitamente como usar o DocuMiner com outros PDFs além daqueles que    │
+│  possam estar presentes no diretório `/pdfs/` após a instalação.  A arquitetura sugere que os PDFs    │
+│  devem ser colocados neste diretório para serem processados.  A documentação foca na instalação e     │
+│  execução, mas não detalha o processo de adicionar novos arquivos PDF após a instalação.  Para usar   │
+│  o projeto com outros PDFs, você provavelmente precisará copiar os arquivos PDF para o diretório      │
+│  `DocuMiner/pdfs/`.                                                                                   │
+│                                                                                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+🤖 Pergunte algo com base nos documentos: 
