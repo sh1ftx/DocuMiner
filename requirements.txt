@@ -1,6 +1,6 @@
-# openai-whisper @ git+https://github.com/openai/whisper.git
+openai-whisper @ git+https://github.com/openai/whisper.git
 rich==13.3.4
-pdfplumber==0.9.0
+pdfplumber
 PyMuPDF==1.22.4
 tqdm==4.65.0
 google-generativeai==0.3.0
