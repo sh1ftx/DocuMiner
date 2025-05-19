@@ -42,6 +42,23 @@ function Ask-User($question) {
     return $response -in @("s", "S")
 }
 
+function Install-Whisper {
+    $maxRetries = 5
+    $attempt = 0
+    while ($attempt -lt $maxRetries) {
+        try {
+            Print-Step "Tentando instalar Whisper (tentativa $($attempt + 1) de $maxRetries)..."
+            pip install --upgrade --force-reinstall --no-cache-dir git+https://github.com/openai/whisper.git
+            return $true
+        } catch {
+            Print-Warn "Falha na instalação do Whisper: $($_.Exception.Message)"
+            Start-Sleep -Seconds 5
+            $attempt++
+        }
+    }
+    return $false
+}
+
 Show-Banner
 
 Print-Header "Verificando o Python..."
@@ -83,10 +100,8 @@ if (Test-Path "requirements.txt") {
 
 Print-Step "Deseja instalar Whisper (para transcrição de áudio)?"
 if (Ask-User "Instalar Whisper?") {
-    try {
-        pip install git+https://github.com/openai/whisper.git
-    } catch {
-        Print-Error "❌ Falha ao instalar Whisper. Abortando."
+    if (-not (Install-Whisper)) {
+        Print-Error "❌ Falha ao instalar Whisper após múltiplas tentativas. Abortando."
     }
 } else {
     Print-Warn "Pulando instalação do Whisper."
