@@ -67,22 +67,21 @@ Requirement already satisfied: pycparser in ./venv/lib/python3.13/site-packages 
 [1;34m================================================================================
         Execução do DocuMiner...
 ================================================================================[0m
-Deseja executar o DocuMiner agora? (s/n): ─────────────────────────────────────────────────────────────────────────────────────────────────────────
-/  _ /  _ /   / \ // _/|/ / \  /|/  //                                                                   
-| | || / ||  /  | | ||| |/||| || |\ |||  \  |  /| | |/|| _/||  _ | _/|| |  ||| || | |||  / |    /        
-_/_/_/_/_/  |_/_/  |_\/_\                                                                                
+Deseja executar o DocuMiner agora? (s/n): ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+/  _ /  _ /   / \ // _/|/ / \  /|/  //                                                                                                                                                
+| | || / ||  /  | | ||| |/||| || |\ |||  \  |  /| | |/|| _/||  _ | _/|| |  ||| || | |||  / |    / _/_/_/_/_/  |_/_/  |_\/_\                                                           
 
-📚 DocuMiner - Seu assistente para mineração e estudo de documentos                                      
+📚 DocuMiner - Seu assistente para mineração e estudo de documentos                                                                                                                   
 
-👨‍💻 Desenvolvedor: Kayki Ivan (Sh1ft)                                                                   
-🎯 Objetivo: Facilitar o aprendizado e análise de PDFs complexos                                         
-⚙️ Tecnologia: Google Gemini API, Python, Rich, Automação Completa                                        
+👨‍💻 Desenvolvedor: Kayki Ivan (Sh1ft)                                                                                                                                                
+🎯 Objetivo: Facilitar o aprendizado e análise de PDFs complexos                                                                                                                      
+⚙️ Tecnologia: Google Gemini API, Python, Rich, Automação Completa                                                                                                                     
 
-🚀 Comece explorando seus documentos com inteligência artificial!                                        
-───────────────────────────────────  Bem-vindo ao DocuMiner - Login  ────────────────────────────────────
-╭───────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ 👤 Usuário logado: sh1ft                                                                              │
-╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+🚀 Comece explorando seus documentos com inteligência artificial!                                                                                                                     
+──────────────────────────────────────────────────────────────────────────  Bem-vindo ao DocuMiner - Login  ──────────────────────────────────────────────────────────────────────────
+╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ 👤 Usuário logado: sh1ft                                                                                                                                                           │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
         Menu de Login         
  [1] Login com usuário salvo  
  [2] Cadastro de novo usuário 
@@ -90,11 +89,11 @@ _/_/_/_/_/  |_/_/  |_\/_\
  [4] Alterar API Key          
  [5] Logout                   
  [0] Sair                     
-Escolha uma opção (0): ╭───────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ ✅ Login confirmado para sh1ft                                                                        │
-╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Escolha uma opção (0): ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ ✅ Login confirmado para sh1ft                                                                                                                                                     │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 Convertendo PDFs para JSON...
-Convertendo PDFs:   0%|          | 0/1 [00:00<?, ?it/s]CropBox missing from /Page, defaulting to MediaBox
+Convertendo PDFs:   0%|          | 0/2 [00:00<?, ?it/s]CropBox missing from /Page, defaulting to MediaBox
 CropBox missing from /Page, defaulting to MediaBox
 CropBox missing from /Page, defaulting to MediaBox
 CropBox missing from /Page, defaulting to MediaBox
@@ -102,41 +101,303 @@ CropBox missing from /Page, defaulting to MediaBox
 CropBox missing from /Page, defaulting to MediaBox
 CropBox missing from /Page, defaulting to MediaBox
 CropBox missing from /Page, defaulting to MediaBox
-Convertendo PDFs: 100%|██████████| 1/1 [00:00<00:00,  6.99it/s]Convertendo PDFs: 100%|██████████| 1/1 [00:00<00:00,  6.98it/s]
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+Convertendo PDFs: 100%|██████████| 2/2 [00:01<00:00,  1.36it/s]Convertendo PDFs: 100%|██████████| 2/2 [00:01<00:00,  1.36it/s]
 Carregando base de conhecimento...
 Pronto! Você pode fazer perguntas baseadas nos documentos.
 
-🤖 Pergunte algo com base nos documentos: ╭────────────────────────────────────── 🤖 Resposta do DocuMiner ───────────────────────────────────────╮
-│                                                                                                       │
-│  Como um modelo de linguagem grande, posso te ajudar respondendo perguntas sobre o DocuMiner com      │
-│  base na documentação fornecida.  Posso te explicar:                                                  │
-│                                                                                                       │
-│  * **A finalidade do DocuMiner:** É uma ferramenta de linha de comando que usa IA para analisar,      │
-│  resumir e responder perguntas sobre documentos PDF.                                                  │
-│  * **Como ele funciona:** Converte PDFs para JSON, permitindo consultas interativas sobre o           │
-│  conteúdo.                                                                                            │
-│  * **Quais tecnologias ele usa:** Python, Google Generative AI, Rich, PDFMiner, OpenAI Whisper        │
-│  (opcional), Tqdm e Python-dotenv.                                                                    │
-│  * **Como instalá-lo e executá-lo:**  Os passos de instalação são detalhados para Linux, Windows,     │
-│  macOS e Android (Termux).                                                                            │
-│  * **Quais funcionalidades ele oferece:** Conversão PDF para JSON, consultas interativas, resumos     │
-│  inteligentes e suporte multiplataforma com interface aprimorada.                                     │
-│  * **A arquitetura do projeto:**  A estrutura de diretórios do código-fonte é descrita.               │
-│                                                                                                       │
-│  Em resumo, posso te fornecer informações detalhadas sobre o DocuMiner baseado na documentação que    │
-│  me foi fornecida.  Faça sua pergunta!                                                                │
-│                                                                                                       │
-╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+🤖 Pergunte algo com base nos documentos: ╭───────────────────────────────────────────────────────────────────────────── 🤖 Resposta do DocuMiner ─────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                    │
+│  Olá, lindão!  Preparado para uma jornada alucinante pelo universo das redes de computadores?  Aposto que sim!  Vamos lá, então!  Meu nome é DocuMiner, e sou um assistente        │
+│  genial (e um pouco sarcástico, admito) pronto para te explicar tudo isso com a clareza de um céu estrelado.                                                                       │
+│                                                                                                                                                                                    │
+│  **O QUE SÃO REDES DE COMPUTADORES?**                                                                                                                                              │
+│                                                                                                                                                                                    │
+│  Em termos bem simples, uma rede de computadores é como uma grande festa onde vários computadores se conectam e trocam informações.  Imagine vários amigos (computadores) que      │
+│  querem compartilhar fotos, vídeos, jogar juntos, ou simplesmente conversar. A rede é o meio que permite essa interação.  As definições clássicas, como a de Tanenbaum (2003),  a  │
+│  descrevem como um conjunto de computadores autônomos conectados por uma única tecnologia, enquanto outras, como Peixinho e Fonseca (2013), a veem como uma interconexão de        │
+│  estações de trabalho, periféricos e outros dispositivos.  Na verdade, a definição mais abrangente seria uma infraestrutura de hardware e software para transferir informações     │
+│  entre duas ou mais entidades.  Viu como é simples?                                                                                                                                │
+│                                                                                                                                                                                    │
+│  **DO ANALÓGICO AO DIGITAL: A BASE DE TUDO**                                                                                                                                       │
+│                                                                                                                                                                                    │
+│  Antes de mergulharmos nas redes, precisamos entender a base: o mundo analógico versus o mundo digital.  O analógico é contínuo, como a temperatura de um ambiente, que pode       │
+│  assumir infinitos valores.  Já o digital é discreto, como um relógio digital, que só mostra números inteiros.  O mundo digital, com sua precisão e facilidade de manipulação, é   │
+│  a força motriz das redes de computadores.                                                                                                                                         │
+│                                                                                                                                                                                    │
+│  **TIPOS DE REDES:**                                                                                                                                                               │
+│                                                                                                                                                                                    │
+│  Existem diversos tipos de redes, classificadas principalmente pelo alcance geográfico:                                                                                            │
+│                                                                                                                                                                                    │
+│  *   **LAN (Local Area Network):**  Redes pequenas, geralmente dentro de um prédio ou campus.                                                                                      │
+│  *   **MAN (Metropolitan Area Network):**  Redes maiores, cobrindo uma cidade inteira.                                                                                             │
+│  *   **WAN (Wide Area Network):** As gigantes, abrangendo grandes distâncias, como a internet!                                                                                     │
+│                                                                                                                                                                                    │
+│  **TOPOLOGIAS DE REDE:**                                                                                                                                                           │
+│                                                                                                                                                                                    │
+│  As redes também podem ser classificadas pela sua forma de interconectar os computadores. Algumas topologias comuns são:                                                           │
+│                                                                                                                                                                                    │
+│  *   **Barra:** Todos os computadores conectados em uma única linha. Simples, mas um ponto de falha no cabo para toda a rede!                                                      │
+│  *   **Estrela:** Todos os computadores conectados a um ponto central (um hub ou switch). Mais robusta e fácil de gerenciar.                                                       │
+│  *   **Anel:** Os computadores formam um círculo, transmitindo dados sequencialmente.  Legal, mas um problema em um computador afeta a todos!                                      │
+│  *   **Híbrida:** Uma combinação de topologias. Uma solução elegante e flexível!                                                                                                   │
+│                                                                                                                                                                                    │
+│  **COMPONENTES DE UMA REDE:**                                                                                                                                                      │
+│                                                                                                                                                                                    │
+│  Para que uma rede funcione, precisamos de alguns componentes-chave:                                                                                                               │
+│                                                                                                                                                                                    │
+│  *   **Meios de transmissão:** Cabos (coaxial, fibra óptica) ou ondas de rádio (Wi-Fi).                                                                                            │
+│  *   **Cabeamento estruturado:** Um padrão para organizar os cabos, crucial para uma rede organizada.                                                                              │
+│  *   **Equipamentos de rede:**  Routers, switches, hubs... cada um com sua função específica.                                                                                      │
+│                                                                                                                                                                                    │
+│                                                                                                                                                                                    │
+│  **MODELOS DE REDE: OSI E TCP/IP**                                                                                                                                                 │
+│                                                                                                                                                                                    │
+│  Aqui entra a parte mais "cerebral". Existem modelos que descrevem como as redes funcionam, e os principais são:                                                                   │
+│                                                                                                                                                                                    │
+│  *   **Modelo OSI (Open Systems Interconnection):** Um modelo teórico com sete camadas, cada uma com sua responsabilidade. Uma abstração perfeita!                                 │
+│  *   **Modelo TCP/IP (Transmission Control Protocol/Internet Protocol):** O modelo que rege a internet, baseado em quatro camadas, mais prático para a implementação.              │
+│                                                                                                                                                                                    │
+│  **ENDEREÇAMENTO IP:**                                                                                                                                                             │
+│                                                                                                                                                                                    │
+│  Para que um computador seja encontrado na rede, ele precisa de um endereço, o famoso IP (Internet Protocol).  Existem dois tipos principais:                                      │
+│                                                                                                                                                                                    │
+│  *   **IPv4:** Os endereços tradicionais, com quatro conjuntos de números separados por pontos. Quase se acabaram!                                                                 │
+│  *   **IPv6:** O sucessor do IPv4, com um sistema de endereçamento muito mais extenso. O futuro está aqui!                                                                         │
+│                                                                                                                                                                                    │
+│  **SUB-REDES E REDES SEM FIO:**                                                                                                                                                    │
+│                                                                                                                                                                                    │
+│  *   **Sub-redes:**  Uma forma de dividir uma rede maior em redes menores, melhorando a performance e segurança.                                                                   │
+│  *   **Redes sem fio:**  Usando ondas de rádio para conectar dispositivos, como o Wi-Fi.  A liberdade sem fios!                                                                    │
+│                                                                                                                                                                                    │
+│  **SIMULAÇÃO/EMULAÇÃO DE REDES E REDES DEFINIDAS POR SOFTWARE:**                                                                                                                   │
+│                                                                                                                                                                                    │
+│  Para testar e desenvolver redes sem precisar de todo o hardware, existem simuladores e emuladores, além das tecnologias de redes definidas por software (SDN) que permitem um     │
+│  controle programático da rede.                                                                                                                                                    │
+│                                                                                                                                                                                    │
+│  **CONCLUSÃO:**                                                                                                                                                                    │
+│                                                                                                                                                                                    │
+│  Pronto!  Fizemos uma viagem rápida e divertida pelo fascinante mundo das redes de computadores.  Espero que tenha sido tão esclarecedor para você quanto foi para mim!  Qualquer  │
+│  dúvida, pode perguntar!  Afinal, sou DocuMiner e estou aqui para te ajudar (mesmo que um pouco ironicamente)!                                                                     │
+│                                                                                                                                                                                    │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-🤖 Pergunte algo com base nos documentos: ╭────────────────────────────────────── 🤖 Resposta do DocuMiner ───────────────────────────────────────╮
-│                                                                                                       │
-│  O documento não especifica explicitamente como usar o DocuMiner com outros PDFs além daqueles que    │
-│  possam estar presentes no diretório `/pdfs/` após a instalação.  A arquitetura sugere que os PDFs    │
-│  devem ser colocados neste diretório para serem processados.  A documentação foca na instalação e     │
-│  execução, mas não detalha o processo de adicionar novos arquivos PDF após a instalação.  Para usar   │
-│  o projeto com outros PDFs, você provavelmente precisará copiar os arquivos PDF para o diretório      │
-│  `DocuMiner/pdfs/`.                                                                                   │
-│                                                                                                       │
-╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+🤖 Pergunte algo com base nos documentos: ╭───────────────────────────────────────────────────────────────────────────── 🤖 Resposta do DocuMiner ─────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                    │
+│  Olá!  DocuMiner aqui, à sua disposição.  Vamos desvendar o mistério das LANs, MANs e WANs, certo?  Prepare-se para uma aula rápida e divertida, digna de um gênio maluco!         │
+│                                                                                                                                                                                    │
+│  **LAN (Local Area Network): A Rede Local, Pequena e Enxuta**                                                                                                                      │
+│                                                                                                                                                                                    │
+│  Imagine sua casa, sua escola, ou um escritório.  Uma LAN é basicamente uma rede de computadores que opera dentro de uma área geográfica relativamente pequena, como um prédio,    │
+│  um campus universitário ou até mesmo uma pequena empresa.  Pense nela como uma pequena comunidade de máquinas falando entre si.                                                   │
+│                                                                                                                                                                                    │
+│  * **Características:**                                                                                                                                                            │
+│      * **Alcance:** Geralmente limitada a um único local físico.                                                                                                                   │
+│      * **Velocidade:** Normalmente oferece altas velocidades de transmissão de dados.                                                                                              │
+│      * **Custo:**  Relativamente baixo para implementar e manter.                                                                                                                  │
+│      * **Segurança:**  Mais fácil de controlar e proteger do acesso não autorizado.                                                                                                │
+│      * **Exemplos:**  A rede Wi-Fi da sua casa, a rede cabeada de um escritório.                                                                                                   │
+│                                                                                                                                                                                    │
+│                                                                                                                                                                                    │
+│  **MAN (Metropolitan Area Network): A Rede Metropolitana, Abrangendo a Cidade**                                                                                                    │
+│                                                                                                                                                                                    │
+│  Subindo um pouco de nível, temos a MAN.  Ela cobre uma área geográfica maior, tipicamente uma cidade inteira.  Imagine várias LANs conectadas entre si para formar uma rede       │
+│  maior, capaz de conectar empresas, instituições e residências dentro de uma metrópole.                                                                                            │
+│                                                                                                                                                                                    │
+│  * **Características:**                                                                                                                                                            │
+│      * **Alcance:** Cobertura de uma cidade ou região metropolitana.                                                                                                               │
+│      * **Velocidade:**  Velocidades moderadas a altas.                                                                                                                             │
+│      * **Custo:**  Mais caro que uma LAN, mas mais barato que uma WAN.                                                                                                             │
+│      * **Segurança:**  Mais complexa de gerenciar em termos de segurança.                                                                                                          │
+│      * **Exemplos:**  Uma rede que conecta diferentes universidades em uma mesma cidade, ou uma rede de fibra óptica que fornece internet para vários bairros.                     │
+│                                                                                                                                                                                    │
+│                                                                                                                                                                                    │
+│  **WAN (Wide Area Network): A Rede Extensa, Conectando o Mundo**                                                                                                                   │
+│                                                                                                                                                                                    │
+│  Chegamos ao topo da cadeia alimentar das redes! A WAN é a gigante, cobrindo vastas áreas geográficas, e o exemplo mais famoso é a internet.  Pense nela como um conjunto          │
+│  gigantesco de LANs e MANs interconectadas globalmente, permitindo a comunicação entre pessoas e dispositivos em diferentes continentes.                                           │
+│                                                                                                                                                                                    │
+│  * **Características:**                                                                                                                                                            │
+│      * **Alcance:** Abrange grandes distâncias, até mesmo globalmente.                                                                                                             │
+│      * **Velocidade:**  A velocidade pode variar muito dependendo das tecnologias utilizadas.                                                                                      │
+│      * **Custo:**  O mais caro para implementar e manter.                                                                                                                          │
+│      * **Segurança:**  Extremamente complexa de garantir a segurança em uma rede tão vasta.                                                                                        │
+│      * **Exemplos:**  A Internet, redes de longa distância entre empresas multinacionais.                                                                                          │
+│                                                                                                                                                                                    │
+│  Em resumo: LAN é para o vizinho, MAN para a cidade e WAN para o mundo!  Qualquer dúvida, pode me chamar.  Afinal, a curiosidade matou o gato, mas a satisfação da resposta        │
+│  trouxe-o de volta à vida, não é?                                                                                                                                                  │
+│                                                                                                                                                                                    │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 🤖 Pergunte algo com base nos documentos: 
